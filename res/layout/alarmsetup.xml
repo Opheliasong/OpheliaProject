@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="70"
+            android:orientation="vertical" >
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="40" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="70"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/setBtn"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="30"
+                android:text="Set" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="30"
+                android:text="reset" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+ 
