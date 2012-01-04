@@ -3,5 +3,15 @@
 
     <string name="hello">Hello World, AlarmActivity!</string>
     <string name="app_name">Alarm</string>
+    <string name="varMon">월</string>
+    <string name="varTue">화</string>
+    <string name="varWed">수</string>
+    <string name="varThr">목</string>
+    <string name="varFri">금</string>
+    <string name="varSat">토</string>
+    <string name="varSun">일</string>
+    <string-array name="arrDates"></string-array>
+    <item name="btnHeight" type="integer">40</item>
+    <string name="btnHeightString">40dp</string>
 
 </resources>

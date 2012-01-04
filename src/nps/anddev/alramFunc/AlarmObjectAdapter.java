@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -37,10 +38,13 @@ public class AlarmObjectAdapter extends ArrayAdapter implements OnClickListener{
 			raw.setOnClickListener(this);
 			wrapper = new AlarmWrapper();
 
+			wrapper.alarmTitle = (TextView)raw.findViewById(R.id.AlarmTitle);
 			wrapper.timeText = (TextView) raw.findViewById(R.id.time);
-			wrapper.dateText = (TextView) raw.findViewById(R.id.Dates);
-			wrapper.onOffButton = (ToggleButton) raw.findViewById(R.id.toggleButton1);
+			//wrapper.dateText = (TextView) raw.findViewById(R.id.Dates);
+			wrapper.dateText = (TextView)raw.findViewById(R.id.Dates);
+			wrapper.onOffButton = (ToggleButton) raw.findViewById(R.id.alarmToggle);
 			wrapper.position = position;
+			wrapper.alalrmStatusImage = (ImageView)raw.findViewById(R.id.alarmStatusIMG);
 
 			raw.setTag(wrapper);
 		} else {
@@ -48,16 +52,18 @@ public class AlarmObjectAdapter extends ArrayAdapter implements OnClickListener{
 		}
 		
 		//wrapper.timeText.setText("Hello Time Text");
-		String timeString = m_lstAlarmObjects.get(position).m_Calendar.getTime().toLocaleString();
-		wrapper.timeText.setText(timeString);
+		wrapper.alarmTitle.setText(m_lstAlarmObjects.get(position).m_AlarmName);
+		wrapper.timeText.setText(m_lstAlarmObjects.get(position).m_Calendar.getTime().toLocaleString());
 		wrapper.dateText.setText("Hello Date Text");
 
 		return raw;
 	}
 
 	class AlarmWrapper {
+		public TextView alarmTitle;
 		public TextView timeText;
 		public TextView dateText;
+		public ImageView alalrmStatusImage;
 		public ToggleButton onOffButton;
 		public int position;
 

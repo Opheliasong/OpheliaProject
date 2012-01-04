@@ -1,5 +1,6 @@
 package nps.anddev.alramFunc;
 
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import android.net.Uri;
@@ -15,6 +16,9 @@ public class AlarmObject implements Parcelable {
 	public GregorianCalendar m_Calendar;
 	public int m_Index;
 	public String m_CurrentType;
+	public String m_AlarmName;
+	public int m_biRepeatDays;
+	
 
 	public class SetOndays {
 
@@ -46,12 +50,8 @@ public class AlarmObject implements Parcelable {
 		dest.writeValue(m_Calendar);
 		dest.writeInt(m_Index);
 		dest.writeString(m_CurrentType);
-		
-		/*
-		 * dest.writeValue(m_AlarmBackUri); dest.writeValue(m_DaySetOn);
-		 * dest.writeValue(m_AfterNoonOption); dest.writeValue(m_OnActivate);
-		 * dest.writeValue(m_Calendar);
-		 */
+		dest.writeString(m_AlarmName);
+		dest.writeInt(m_biRepeatDays);
 
 		Log.i("Parcel", "Alarm Parcel Writing");
 	}
@@ -64,6 +64,8 @@ public class AlarmObject implements Parcelable {
 		m_Calendar = (GregorianCalendar) in.readValue(GregorianCalendar.class.getClassLoader());
 		m_Index = in.readInt();
 		m_CurrentType = in.readString();
+		m_AlarmName = in.readString();
+		m_biRepeatDays = in.readInt();
 
 		Log.i("Parcel", "Alarm Parcel Reading");
 	}
@@ -132,6 +134,28 @@ public class AlarmObject implements Parcelable {
 
 	public String getCurrentType() {
 		return m_CurrentType;
+	}
+	
+	//현재의 요일과 다음 알림요일과의 차이값을 계산하여 리턴하여 준다.
+	public int calcNextActivateDaysDistance(){
+		int returnValue = 0;	//계산결과 값 (Carry Value)
+		
+		//오늘의 요일을 받아온다.
+		Date CurrentDate = new Date();
+		int day = CurrentDate.getDay();
+		int dayVariable = 1;
+		dayVariable = dayVariable<<day;
+		
+		returnValue = m_biRepeatDays & dayVariable; 
+		
+		if(returnValue>=0){ 
+			
+		}else if(returnValue == 0 ){
+			
+		}else{
+			
+		}
+		return returnValue;
 	}
 
 }

@@ -8,36 +8,69 @@
 package nps.anddev.alramFunc;
 
 public final class R {
+    public static final class array {
+        public static final int arrDates=0x7f050000;
+    }
     public static final class attr {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int AddAlarm=0x7f05000b;
-        public static final int AddGroup=0x7f05000c;
-        public static final int Dates=0x7f050003;
-        public static final int Snooze=0x7f05000e;
-        public static final int datePicker1=0x7f050006;
-        public static final int linearLayout1=0x7f050001;
-        public static final int linearLayout2=0x7f050004;
-        public static final int linearLayout3=0x7f050005;
-        public static final int listView1=0x7f05000a;
-        public static final int resetBtn=0x7f050009;
-        public static final int setBtn=0x7f050008;
-        public static final int textView1=0x7f05000d;
-        public static final int time=0x7f050002;
-        public static final int timePicker1=0x7f050007;
-        public static final int toggleButton1=0x7f050000;
+        public static final int AddAlarm=0x7f070011;
+        public static final int AddGroup=0x7f070012;
+        public static final int AlarmPatternButton=0x7f07000d;
+        public static final int AlarmTitle=0x7f070003;
+        public static final int BgButton=0x7f07000b;
+        public static final int DateButton=0x7f070009;
+        public static final int Dates=0x7f070005;
+        public static final int RepeatButton=0x7f07000c;
+        public static final int Snooze=0x7f07001e;
+        public static final int SoundButton=0x7f07000a;
+        public static final int alarmStatusIMG=0x7f070000;
+        public static final int alarmToggle=0x7f070001;
+        public static final int closeDateSetting=0x7f07001c;
+        public static final int linearLayout1=0x7f070002;
+        public static final int linearLayout2=0x7f070006;
+        public static final int linearLayout3=0x7f070007;
+        public static final int listView1=0x7f070010;
+        public static final int resetBtn=0x7f07000f;
+        public static final int setBtn=0x7f07000e;
+        public static final int setOnDates=0x7f07001b;
+        public static final int textView1=0x7f07001d;
+        public static final int time=0x7f070004;
+        public static final int timePickButton=0x7f070008;
+        public static final int timePicker=0x7f07001f;
+        public static final int toggleAll=0x7f07001a;
+        public static final int toggleFri=0x7f070017;
+        public static final int toggleMon=0x7f070013;
+        public static final int toggleSat=0x7f070018;
+        public static final int toggleSun=0x7f070019;
+        public static final int toggleThr=0x7f070016;
+        public static final int toggleTue=0x7f070014;
+        public static final int toggleWed=0x7f070015;
+    }
+    public static final class integer {
+        public static final int btnHeight=0x7f060000;
     }
     public static final class layout {
         public static final int alarmitem=0x7f030000;
         public static final int alarmsetup=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int showresult=0x7f030003;
+        public static final int setdates=0x7f030003;
+        public static final int showresult=0x7f030004;
+        public static final int timer=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int btnHeightString=0x7f040009;
         public static final int hello=0x7f040000;
+        public static final int varFri=0x7f040006;
+        public static final int varMon=0x7f040002;
+        public static final int varSat=0x7f040007;
+        public static final int varSun=0x7f040008;
+        public static final int varThr=0x7f040005;
+        public static final int varTue=0x7f040003;
+        public static final int varWed=0x7f040004;
     }
 }

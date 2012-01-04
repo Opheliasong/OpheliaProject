@@ -114,6 +114,8 @@ public class alarmList extends Activity {
     			
     	    	AlarmObject changedTarget = m_lstAlarmObject.get(object.m_Index);
     	    	changedTarget.m_Calendar = object.m_Calendar;
+    	    	changedTarget.m_AlarmName = object.m_AlarmName;
+    	    	changedTarget.m_biRepeatDays = object.m_biRepeatDays;
     			m_AlarmAdapter.notifyDataSetChanged();
     		}
     	}

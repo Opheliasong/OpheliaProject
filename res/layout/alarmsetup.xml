@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    <LinearLayout
+
+    <ScrollView
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,44 +13,114 @@
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="70"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <DatePicker
-                android:id="@+id/datePicker1"
+            <TextView
                 android:layout_width="fill_parent"
-                android:layout_height="0dip"
-                android:layout_weight="40" />
+                android:layout_height="wrap_content"
+                android:text="알람 이름" />
 
+            <EditText
+                android:id="@+id/AlarmTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제목 없음" >
+            </EditText>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="시간" />
+<!-- 
             <TimePicker
                 android:id="@+id/timePicker1"
                 android:layout_width="fill_parent"
                 android:layout_height="0dip"
                 android:layout_weight="60" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="70"
-            android:orientation="horizontal" >
-
-            <Button
-                android:id="@+id/setBtn"
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="30"
-                android:text="Set" />
+ -->
+             <Button
+                android:id="@+id/timePickButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Time"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="반복 요일" />
 
             <Button
-                android:id="@+id/resetBtn"
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="30"
-                android:text="reset" />
+                android:id="@+id/DateButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                 android:text="Date"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="알람 소리" />
+
+            <Button
+                android:id="@+id/SoundButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                 android:text="Sound 1"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="알람 배경화면" />
+
+            <Button
+                android:id="@+id/BgButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                 android:text="BG 01"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="알람 반복 시간" />
+
+            <Button
+                android:id="@+id/RepeatButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                 android:text="5 min"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="알람 해지 패턴" />
+
+            <Button
+                android:id="@+id/AlarmPatternButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                 android:text="Standard"/>
         </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Set" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="reset" />
     </LinearLayout>
+
 </LinearLayout>
- 

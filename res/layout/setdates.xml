@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/toggleMon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="@string/varMon"
+            android:textOn="@string/varMon" />
+
+        <ToggleButton
+            android:id="@+id/toggleTue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/varTue"
+            android:textOff="@string/varTue"
+            android:textOn="@string/varTue" />
+
+        <ToggleButton
+            android:id="@+id/toggleWed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/varWed"
+            android:textOff="@string/varWed"
+            android:textOn="@string/varWed" />
+
+        <ToggleButton
+            android:id="@+id/toggleThr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="@string/varThr"
+            android:textOn="@string/varThr" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/toggleFri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="@string/varFri"
+            android:textOn="@string/varFri" />
+
+        <ToggleButton
+            android:id="@+id/toggleSat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="@string/varSat"
+            android:textOn="@string/varSat" />
+
+        <ToggleButton
+            android:id="@+id/toggleSun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="@string/varSun"
+            android:textOn="@string/varSun" />
+
+        <ToggleButton
+            android:id="@+id/toggleAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:textOff="언제나"
+            android:textOn="언제나" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setOnDates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="설정" />
+
+        <Button
+            android:id="@+id/closeDateSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="취소" />
+    </LinearLayout>
+
+</LinearLayout>
